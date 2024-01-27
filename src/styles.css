@@ -109,7 +109,17 @@ body {
 }
 
 .weather {
-  display: none;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 4s;
+}
+
+.weather > div {
+  overflow: hidden;
+}
+
+.weather:hover {
+  grid-template-rows: 1fr;
 }
 
 .error {

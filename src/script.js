@@ -15,6 +15,7 @@ async function checkWeather(city) {
     document.querySelector(".weather").style.display = "none";
   } else {
     console.log(data);
+    document.querySelector(".weather").style.gridTemplateRows = "1fr";
     document.querySelector(".error").style.display = "none";
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = data.main.temp + "°c";
